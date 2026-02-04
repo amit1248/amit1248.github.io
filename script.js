@@ -71,3 +71,4 @@ form.addEventListener("submit", e => {
   msg.style.color = "green";
   form.reset();
 });
+<script src="script.js"></script>
