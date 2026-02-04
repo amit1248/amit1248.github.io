@@ -67,7 +67,6 @@ revealOnScroll();
 
 const darkToggle = document.getElementById("darkToggle");
 
-// Load preference
 if (
   localStorage.theme === "dark" ||
   (!localStorage.theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -95,18 +94,18 @@ if (form) {
 
     if (!name || !email || !message) {
       msg.textContent = "Please fill all fields.";
-      msg.style.color = "red";
+      msg.style.color = "#b91c1c";
       return;
     }
 
     if (!email.includes("@")) {
       msg.textContent = "Invalid email address.";
-      msg.style.color = "red";
+      msg.style.color = "#b91c1c";
       return;
     }
 
     msg.textContent = "Message sent successfully!";
-    msg.style.color = "green";
+    msg.style.color = "#1e3a8a";
     form.reset();
   });
 }
